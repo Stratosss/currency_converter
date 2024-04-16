@@ -22,7 +22,7 @@ def convert_currency(base): #Gets data from online database based on a currency
 def inputs():   #Ensures correct values are inserted with the option to quit on steps 1 and 2
     while True:
         a = input('Select the currency you want to exchance from (press q for quit): ').upper() #accepts both capital and lowercase curr
-        if a=="Q":
+        if a =="Q":
             sys.exit()
         else:
             if a in CURRENCIES:
