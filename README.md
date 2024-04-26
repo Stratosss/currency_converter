@@ -1,4 +1,4 @@
-#  Currency converter and Exchange rate table.
+#  Currency converter and Exchange rate table
 ## Overview
 This application utilises an API from https://www.freecurrencyapi.com.
 It returns the latest exchange rates, as well as converts the given amount to and from the currencies of interest. It consists of 33 popular currencies.
