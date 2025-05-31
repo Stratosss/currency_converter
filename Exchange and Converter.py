@@ -1,6 +1,6 @@
 import requests, sys
 
-API_KEY = 'fca_live_oVhDzrdw4MeLGZsctPFu1vH8ZtYPyUZickpggzlj'    #API token from https://www.freecurrencyapi.com
+API_KEY = 'enter API here'    #API token from https://www.freecurrencyapi.com
 BASE_URL = f'https://api.freecurrencyapi.com/v1/latest?apikey={API_KEY}'
 
 CURRENCIES = ["EUR","USD","JPY","BGN","CZK","DKK","GBP","HUF","PLN","RON","SEK","CHF","ISK","NOK","HRK","RUB","TRY",
