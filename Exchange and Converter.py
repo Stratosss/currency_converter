@@ -55,12 +55,8 @@ def convert_between_currencies(a,b, amount, data): #Displays current exchange ra
         try:
             conversion= data[b] * amount
             print("\nCurrent exchange rates:")
-            for k,v in data.items():
-                if k == a:
-                    continue
-                else:
-                    print(f"{k} : {v}")
-            print(f"\nThe conversion value from {a} to {b} for the amount: {amount:,} is : {conversion:,.2f}")
+            print("\n".join(f"{k} : {v}" for k,v in data.items() if k !=a)) # prints all current exchange rates, skipping the "FROM" currency because it will be the same
+            print(f"\nThe conversion value from {a} to {b} for the amount: {amount:,} is : {conversion:,.2f}") #.2f two decimals, :, indicates how to distinguish the thousands
             break
         except (TypeError, ValueError):
             print("please insert correct values")
