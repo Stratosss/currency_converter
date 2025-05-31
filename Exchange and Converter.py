@@ -54,14 +54,13 @@ def convert_between_currencies(a,b, amount, data): #Displays current exchange ra
     while True:
         try:
             conversion= data[b] * amount
-            rounded = round(conversion, 4)
             print("\nCurrent exchange rates:")
             for k,v in data.items():
                 if k == a:
                     continue
                 else:
                     print(f"{k} : {v}")
-            print(f"\nThe conversion value from {a} to {b} for the amount: {amount:,} is : {rounded:,}")
+            print(f"\nThe conversion value from {a} to {b} for the amount: {amount:,} is : {conversion:,.2f}")
             break
         except (TypeError, ValueError):
             print("please insert correct values")
